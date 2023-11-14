@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHS Strand Finder</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fontawesome.css" />
+
+    <!-- SCRIPT -->
+    <script src="../js/library/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- NAV SECTION - DASHBOARD -->
+    <nav class="navbar navbar-expand-lg grd-pri-sec" style="height: 6vh">
+      <div class="container">
+        <a class="navbar-brand poppins text-light fs-5" href="#">
+          SHS Strand Finder
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-lg-flex align-items-center">
+            <a class="nav-link roboto text-uppercase text-info fs-5" href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN - NO FLEX -->
+    <main class="login container-fluid position-relative" style="height: 94vh">
+      <div class="row h-100">
+        <section class="col-9 h-100 auto-overflow position-relative pb-4 px-5">
+          <!-- STRAND TYPE CONTAINER -->
+          <section class="strand-type-container mt-5">
+            <h5
+              class="w-100 poppins border-bottom border-dark text-uppercase fw-semibold"
+            >
+              SUBJECT NAME ASSESSMENT
+            </h5>
+            <section class="row" style="gap: 0.75rem">
+              <!-- UNANSWER -->
+              <div
+                class="card bg-dark position-relative col-3 p-2 g-3"
+                style="height: 500px"
+              >
+                <div class="card-body position-relative">
+                  <a class="nav-link" href="#">
+                    <i
+                      class="fa-solid fa-xmark text-light fs-3 position-absolute top-0 end-0 m-2"
+                    ></i>
+                  </a>
+                  <div
+                    class="position-absolute top-50 start-50 translate-middle w-100 p-3"
+                  >
+                    <button
+                      class="btn btn-dark roboto w-100 p-4 fs-6 fw-semibold"
+                    >
+                      VIEW QUESTION
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- ANSWERED -->
+              <div
+                class="card grd-pri-sec_ position-relative col-3 p-2 g-3"
+                style="height: 500px"
+              >
+                <span class="shs-glass grd-none-inf_"></span>
+                <div class="card-body position-relative">
+                  <a class="nav-link" href="#">
+                    <i
+                      class="fa-solid fa-xmark text-light fs-3 position-absolute top-0 end-0 m-2"
+                    ></i>
+                  </a>
+                  <h6
+                    class="roboto w-100 text-center position-absolute top-50 start-50 translate-middle fw-semibold"
+                  >
+                    SUBMIT YOUR ANSWER
+                  </h6>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+        <section
+          class="col-3 auto-overflow position-sticky top-0 end-0 justify-content-end bg-dark m-0 p-0"
+          style="height: 94vh"
+        >
+          <!-- QUESTION BODY -->
+          <h6
+            class="roboto text-light position-relative border-bottom border-light px-4 py-3"
+          >
+            <i class="fa-solid fa-question me-3"></i>Question 1
+            <a class="nav-link" href="#">
+              <i
+                class="fa-solid fa-xmark text-light fs-3 position-absolute top-0 end-0 m-2"
+              ></i>
+            </a>
+          </h6>
+          <div
+            class="w-100 border-bottom border-light d-flex flex-column align-items-center justify-content-center py-3"
+          >
+            <p class="roboto text-light px-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua?
+            </p>
+            <section class="w-100 p-4">
+              <img
+                class="w-100 rounded shadow"
+                src="../asset/strand/strand1.jpg"
+                alt="strand image display"
+                style="height: 175px"
+              />
+            </section>
+          </div>
+          <!-- CHOICES -->
+          <section class="p-4">
+            <!-- QUESTION W/ IMAGE -->
+            <button
+              class="btn btn-secondary roboto text-start w-100 mb-2 p-3 fs-6 fw-semibold"
+            >
+              A. Choice A
+
+              <img
+                class="w-100 rounded shadow mt-2"
+                src="../asset/strand/strand1.jpg"
+                alt="strand image display"
+                style="height: 175px"
+              />
+            </button>
+            <!-- QUESTION W/O IMAGE -->
+            <button
+              class="btn btn-secondary roboto w-100 mb-2 px-4 fs-6 fw-semibold"
+            >
+              B. Choice B
+            </button>
+            <button
+              class="btn btn-secondary roboto w-100 mb-2 px-4 fs-6 fw-semibold"
+            >
+              C. Choice C
+            </button>
+            <button
+              class="btn btn-secondary roboto w-100 mb-2 px-4 fs-6 fw-semibold"
+            >
+              D. Choice D
+            </button>
+            <button
+              class="btn btn-dark roboto w-100 p-4 fs-6 fw-semibold mt-4"
+              disabled="true"
+            >
+              SUBMIT
+            </button>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

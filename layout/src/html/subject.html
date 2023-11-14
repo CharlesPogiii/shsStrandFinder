@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHS Strand Finder</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fontawesome.css" />
+
+    <!-- SCRIPT -->
+    <script src="../js/library/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- NAV SECTION - DASHBOARD -->
+    <nav class="navbar navbar-expand-lg grd-pri-sec" style="height: 6vh">
+      <div class="container">
+        <a class="navbar-brand poppins text-light fs-5" href="#">
+          SHS Strand Finder
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-lg-flex align-items-center">
+            <a class="nav-link roboto text-uppercase text-info fs-5" href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN - NO FLEX -->
+    <main class="login container-fluid auto-overflow" style="height: 94vh">
+      <div class="container">
+        <div class="row">
+          <section class="col-12 pb-4">
+            <!-- SUBJECT TYPE CONTAINER -->
+            <section class="subject-type-container position-relative mt-5">
+              <a class="nav-link" href="#">
+                <i
+                  class="fa-solid fa-rectangle-xmark text-danger fs-3 position-absolute top-0 end-0"
+                ></i>
+              </a>
+              <h5
+                class="w-100 poppins border-bottom border-dark text-uppercase fw-semibold"
+              >
+                SUBJECT TYPE NAME
+              </h5>
+              <section class="row">
+                <div
+                  class="card col-2 position-relative text-bg-dark p-0 m-3"
+                  style="height: 350px"
+                >
+                  <img
+                    src="../asset/subject/subject1.jpg"
+                    class="card-img h-100"
+                    alt="subject img"
+                  />
+                  <a class="nav-link" href="#">
+                    <i
+                      class="fa-solid fa-rectangle-xmark text-light fs-3 position-absolute top-0 end-0 m-2"
+                    ></i>
+                  </a>
+                  <div class="bg-dark position-absolute p-2 bottom-0 w-100">
+                    <h5 class="card-title roboto">Subject Name</h5>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+            <!-- SUBJECT TYPE CONTAINER -->
+            <section class="subject-type-container mt-5">
+              <h5
+                class="w-100 poppins border-bottom border-dark text-uppercase fw-semibold"
+              >
+                SUBJECT TYPE NAME
+              </h5>
+              <section class="row">
+                <div
+                  class="card col-2 position-relative text-bg-dark p-0 m-3"
+                  style="height: 350px"
+                >
+                  <img
+                    src="../asset/subject/subject1.jpg"
+                    class="card-img h-100"
+                    alt="subject img"
+                  />
+                  <div class="bg-dark position-absolute p-2 bottom-0 w-100">
+                    <h5 class="card-title roboto">Subject Name</h5>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
+          <!-- 
+            <section class="col-4 d-flex justify-content-end bg-danger">D</section> 
+          -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

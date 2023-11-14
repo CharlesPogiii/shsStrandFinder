@@ -1,0 +1,62 @@
+/*
+// LINK OTHER SCHEMA
+const mongoose = require('mongoose');
+
+const postSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  content: { type: String, required: true },
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  // Other post-specific fields
+});
+
+const Post = mongoose.model('Post', postSchema);
+
+module.exports = Post;
+
+// CREATE WITH RELATIONSHIP
+const User = require('./models/user');
+const Post = require('./models/post');
+
+// Create a new user
+const newUser = new User({
+  username: 'exampleUser',
+  email: 'user@example.com',
+  // Other user-specific data
+});
+
+// Save the user to the database
+newUser.save().then((user) => {
+  // Create a new post associated with the user
+  const newPost = new Post({
+    title: 'Sample Post',
+    content: 'This is a sample post content.',
+    user: user._id, // Associate the post with the user
+    // Other post-specific data
+  });
+
+  // Save the post to the database
+  newPost.save().then((post) => {
+    console.log('User and Post created:', user, post);
+  });
+});
+*/
+
+/*
+// CREATE
+app.post("/api/users", async (req, res) => {
+  try {
+    const newUser = new User({
+      email: "janwin2@email.com",
+      password: "password2",
+      isAdmin: false,
+    });
+
+    // Save the user to the database
+    await newUser.save();
+
+    res.status(201).json(newUser);
+  } catch (error) {
+    res.status(500).json({ error: "Error creating user" });
+  }
+});
+*/

@@ -1,0 +1,126 @@
+<!-- NAME -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHS Strand Finder</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fontawesome.css" />
+
+    <!-- SCRIPT -->
+    <script src="../js/library/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- NAV SECTION - DASHBOARD -->
+    <nav class="navbar navbar-expand-lg grd-pri-sec" style="height: 6vh">
+      <div class="container">
+        <a class="navbar-brand poppins text-light fs-5" href="#">
+          SHS Strand Finder
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-lg-flex align-items-center">
+            <a class="nav-link roboto text-uppercase text-info fs-5" href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN - NO FLEX -->
+    <main class="login container-fluid auto-overflow" style="height: 94vh">
+      <div class="container">
+        <div class="row">
+          <section class="col-12 pb-4">
+            <!-- PANEL DISPLAY -->
+            <header class="card mt-5">
+              <div class="card-body p-5">
+                <h2 class="card-title poppins">Access Control</h2>
+                <p class="card-text my-4 roboto">
+                  Hello, email! Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </header>
+
+            <!-- FORM CONTAINER -->
+            <section class="strand-type-container position-relative mt-5">
+              <h5
+                class="w-100 poppins border-bottom border-dark text-uppercase fw-semibold"
+              >
+                LIST OF USERS
+              </h5>
+              <!-- USER TABLE -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">User ID</th>
+                    <th scope="col">Email</th>
+                    <th scope="col" colspan="2">Access</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td class="text-end">
+                      <button class="btn btn-dark roboto px-4 m-0 fs-6">
+                        ALLOW
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td class="text-end">
+                      <button class="btn btn-danger roboto px-4 m-0 fs-6">
+                        NOT ALLOW
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td class="text-end">
+                      <button class="btn btn-dark roboto px-4 m-0 fs-6">
+                        ALLOW
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </section>
+          <!-- 
+            <section class="col-4 d-flex justify-content-end bg-danger">D</section> 
+          -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

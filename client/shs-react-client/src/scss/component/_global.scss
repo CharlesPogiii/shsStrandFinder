@@ -1,0 +1,10 @@
+body {
+  overflow: hidden;
+  img {
+    object-fit: cover;
+  }
+
+  .auto-overflow {
+    overflow-y: auto;
+  }
+}

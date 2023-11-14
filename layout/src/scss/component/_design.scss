@@ -1,0 +1,107 @@
+@use "../costumize" as *;
+@use "./gradient" as *;
+
+.shs-design {
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: -1000;
+
+  // position
+  $verticalX1: 0px;
+  $verticalX2: 150px;
+  $verticalX3: 125px;
+  $verticalX4: 350px;
+  $verticalX5: -$verticalX3;
+  $verticalX6: $verticalX1;
+
+  // movement
+  $phaseMov1: 150px;
+
+  &.verticalOval-1 {
+    bottom: 0;
+    left: $verticalX1;
+    width: 100px;
+    height: 500px;
+    border-radius: 3rem;
+    background-color: $primary;
+
+    &.phase-1 {
+      left: calc($verticalX1 - $phaseMov1);
+    }
+  }
+
+  &.verticalOval-2 {
+    bottom: -275px;
+    left: $verticalX2;
+    width: 200px;
+    height: 875px;
+    border-radius: 7rem;
+    background-image: $grd-pri-sec__;
+
+    &.phase-1 {
+      left: calc($verticalX2 - $phaseMov1);
+    }
+  }
+
+  &.verticalOval-3 {
+    bottom: -325px;
+    left: $verticalX3;
+    width: 100px;
+    height: 500px;
+    border-radius: 3rem;
+    background-color: $primary;
+
+    &.phase-1 {
+      left: calc($verticalX3 - $phaseMov1);
+    }
+  }
+
+  &.verticalOval-4 {
+    bottom: -300px;
+    left: $verticalX4;
+    width: 125px;
+    height: 500px;
+    border-radius: 4.25rem;
+    background-image: $grd-pri-sec__;
+
+    &.phase-1 {
+      left: calc($verticalX4 - $phaseMov1);
+    }
+  }
+
+  &.verticalOval-5 {
+    top: -90px;
+    right: $verticalX5;
+    width: 100px;
+    height: 500px;
+    border-radius: 3rem;
+    background-color: $secondary;
+  }
+
+  &.verticalOval-6 {
+    top: -375px;
+    right: $verticalX6;
+    width: 200px;
+    height: 875px;
+    border-radius: 7rem;
+    background-image: $grd-pri-sec__;
+  }
+}
+
+.shs-glass {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  animation: shrinkY 1s ease-in-out alternate infinite;
+}
+
+@keyframes shrinkY {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 50%;
+  }
+}

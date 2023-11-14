@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHS Strand Finder</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/fontawesome.css" />
+
+    <!-- SCRIPT -->
+    <script src="../../js/library/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title w-100 fs-5 text-center"
+              id="staticBackdropLabel"
+            >
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="roboto fs-5">This is a question text?</p>
+          </div>
+          <div class="modal-footer w-100">
+            <div class="row w-100">
+              <div class="col-6 p-2">
+                <button
+                  type="button"
+                  class="roboto fw-semibold btn btn-dark w-100"
+                  data-bs-dismiss="modal"
+                >
+                  YES
+                </button>
+              </div>
+              <div class="col-6 p-2">
+                <button
+                  type="button"
+                  class="roboto fw-semibold btn btn-dark w-100"
+                >
+                  CANCEL
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

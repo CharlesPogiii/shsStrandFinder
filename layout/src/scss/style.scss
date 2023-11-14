@@ -1,0 +1,13 @@
+// import costumize styles
+@use "./costumize";
+
+// import components
+@use "./component/global";
+@use "./component/design";
+@use "./component/gradient";
+@use "./component/font";
+@use "./component/input";
+@use "./component/nav";
+
+// import pages
+@use "./page/login";

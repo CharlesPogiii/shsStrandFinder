@@ -1,0 +1,21 @@
+@use "../costumize" as *;
+
+.shs-input {
+  height: 3.25rem;
+  font-size: 1.25em;
+  border: 1px solid $primary;
+
+  &.register-input {
+    border: 1px solid $secondary;
+  }
+}
+
+.shs-textarea {
+  height: 14rem;
+  font-size: 1.25em;
+  border: 1px solid $primary;
+
+  &.register-input {
+    border: 1px solid $secondary;
+  }
+}

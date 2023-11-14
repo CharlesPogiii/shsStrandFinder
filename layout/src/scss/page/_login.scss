@@ -1,0 +1,20 @@
+.login {
+  &-img-1 {
+    width: 300px;
+    height: 450px;
+    z-index: -250;
+
+    span {
+      left: -125px;
+      bottom: -125px;
+      width: 200px;
+      height: 300px;
+    }
+  }
+}
+
+.register {
+  top: 6vh;
+  width: 35vw;
+  background-color: red;
+}

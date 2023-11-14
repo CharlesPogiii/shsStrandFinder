@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHS Strand Finder</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fontawesome.css" />
+
+    <!-- SCRIPT -->
+    <script src="../js/library/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- NAV SECTION -->
+    <nav class="navbar navbar-expand-lg grd-pri-sec" style="height: 6vh">
+      <div class="container">
+        <a class="navbar-brand poppins text-light fs-5" href="#">
+          SHS Strand Finder
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav d-lg-flex align-items-center">
+            <a
+              class="nav-link roboto text-uppercase text-light fw-semibold fs-6"
+              href="#"
+            >
+              LOGIN
+            </a>
+            <a class="nav-link ms-lg-3" href="#">
+              <button class="btn btn-light roboto px-4">Register</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main
+      class="login container d-lg-flex align-items-center"
+      style="height: 94vh"
+    >
+      <div class="row w-100">
+        <section class="col-8">
+          <h1 class="header-size poppins">Reset your Password</h1>
+          <p class="roboto w-50 my-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <!-- RESET PASSWORD FORM -->
+          <form class="w-75" action="javascript:void(0)">
+            <!-- CURRENT EMAIL ADDRESS -->
+            <div class="mb-4 w-100">
+              <input
+                type="email"
+                class="form-control shs-input shadow"
+                id="email"
+                aria-describedby="emailHelp"
+                autocomplete="off"
+                placeholder="Email Address"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+
+            <!-- OLD PASSWORD -->
+            <div class="mb-5 w-100">
+              <input
+                type="password"
+                class="form-control shs-input shadow"
+                id="oldPassword"
+                autocomplete="off"
+                placeholder="Old Password"
+              />
+            </div>
+
+            <!-- NEW PASSWORD -->
+            <div class="mb-5 w-100">
+              <input
+                type="password"
+                class="form-control shs-input shadow"
+                id="newPassword"
+                autocomplete="off"
+                placeholder="New Password"
+              />
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+            <div class="mb-5 w-100">
+              <input
+                type="password"
+                class="form-control shs-input shadow"
+                id="confirmNewPassword"
+                autocomplete="off"
+                placeholder="Confirm New Password"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary fs-6 px-4 text-uppercase text-light fw-semibold fs-6"
+            >
+              RESET
+            </button>
+          </form>
+        </section>
+        <section class="col-4 d-flex justify-content-end pe-0">
+          <!-- IMAGE DESIGN -->
+          <div class="login-img-1 position-relative">
+            <img
+              class="w-100 h-100 shadow"
+              src="../asset/login/login1.png"
+              alt="login image 1"
+            />
+            <span class="position-absolute">
+              <img
+                class="w-100 h-100 shadow"
+                src="../asset/login/login2.png"
+                alt="login image 2"
+              />
+            </span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- DESIGN -->
+    <span class="shs-design verticalOval-1"></span>
+    <span class="shs-design verticalOval-2"></span>
+    <span class="shs-design verticalOval-3"></span>
+    <span class="shs-design verticalOval-4"></span>
+    <span class="shs-design verticalOval-6"></span>
+    <span class="shs-design verticalOval-5"></span>
+  </body>
+</html>

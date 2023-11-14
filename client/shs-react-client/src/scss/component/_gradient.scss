@@ -1,0 +1,31 @@
+@use "../costumize" as *;
+
+$grd-pri-sec: linear-gradient(to right, $primary, $secondary);
+$grd-pri-sec_: linear-gradient(to bottom, $primary, $secondary);
+$grd-pri-sec__: linear-gradient(to top, $primary, $secondary);
+
+$grd-inf-pri: linear-gradient(to right, $info, $primary);
+
+$grd-pri-war: linear-gradient(to right, $primary, $warning);
+
+$grd-none-inf_: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, $info);
+
+.grd-pri-sec {
+  background-image: $grd-pri-sec;
+}
+
+.grd-pri-sec_ {
+  background-image: $grd-pri-sec_;
+}
+
+.grd-inf-pri {
+  background-image: $grd-inf-pri;
+}
+
+.grd-inf-war {
+  background-image: $grd-pri-war;
+}
+
+.grd-none-inf_ {
+  background-image: $grd-none-inf_;
+}
